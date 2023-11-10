@@ -1,0 +1,496 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em; font-family: 'Aclonica', sans-serif;}
+h2{ font-size: 2.7em; font-family: 'Architects Daughter', cursive;}
+h3{ font-size: 2em;
+    font-family: 'Architects Daughter', cursive;
+    color: rgb(0, 0, 0);
+    margin:5px;
+
+}
+h4{ font-size: 2.5em;
+    font-family: 'Architects Daughter', cursive;
+    color: rgb(252, 251, 251);
+    margin-top:5px;
+
+}
+p{ font-size: 1.25em;
+    color: rgba(0, 0, 0, 0.447); /*Le damos transparencis al texto de nuestro restaurante*/
+}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+/*Estilo del botón*/
+button{
+    font-size: 1.10em;
+    font-weight: bold;
+    padding: 10px 30px;
+    margin: 20px;
+    border-radius: 9px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgba(255, 114, 114, 0.815);
+    font-family:  'Architects Daughter';
+}
+
+
+/*Efecto del botón al pasar el cursor*/
+button:hover{
+    background-color:rgba(255, 188, 188, 0.815);
+}
+/*Disposicion de los contenidos*/
+.container{
+    margin: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: space-evenly;
+    justify-content: space-evenly;
+}
+
+/*Color palabra resaltada*/
+.color-acento{ color: rgba(255, 114, 114, 0.815); }
+
+.color-acento2{ color: rgba(255, 114, 114, 0.815) }
+
+.color-acento3{ color: rgba(255, 114, 114, 0.815) }
+
+/*Fondo nav*/
+header{
+    background-color: rgba(245, 245, 245, 0.897);
+}
+
+img.logo{
+    width: 250px;
+}
+
+img.logo2{
+    width: 200px;
+    border: 2px solid white;
+    margin: 15px;
+}
+
+img.logo1{
+    width: 200px;
+    border: 2px solid white;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid rgba(255, 255, 255, 0.397);
+    border-radius: 50%;
+    margin: 15px;
+}
+
+img.logo3{
+    width: 270px;
+    height: 350px;
+    margin: 30px;
+    padding: 2%;
+    border: 5px solid rgba(255, 255, 255, 0.397);
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 20px rgb(0, 0, 0); /* Agrega un efecto de sombra 3D */
+    transition: transform 0.3s; /* Añade una transición suave al hacer hover */
+}
+
+/*Estilo logo barra nav*/
+header .logo{
+    margin: 0;
+    padding: 0px 40px;
+    font-weight: bold;
+    color:rgb(143, 47, 178);
+    font-size: 1.6em;
+    font-family: 'Architects Daughter', cursive;
+}
+/*Disposición de los elementos nav*/
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+/*Elementos de la portada*/
+#portada{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("./media/principal.jpg"); /*Imagen cabecera web*/
+    background-repeat: no-repeat;
+    background-size: cover;/*Ajusta la imagen para cubrir todo el contenedor*/
+    background-position: center center;
+}
+
+#portada h1{
+    color: white;
+}
+
+#portada_fullCalendar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height:225vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("./media/fondo2.jpg"); /*Imagen cabecera web*/
+    background-repeat: no-repeat;
+    background-size: cover;/*Ajusta la imagen para cubrir todo el contenedor*/
+    background-position: center center;
+}
+
+#portada_fullCalendar h1, p{
+    font-family: 'Architects Daughter', cursive;
+    color: white;
+}
+
+.fondo_fullcalendar{
+    background-color: #ccccccbd;
+    width: 590px;
+    height: 590px;
+    padding: 5%;
+}
+
+.fondo_fullcalendar a{
+    color: #3d0c3f;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 2px;
+}
+
+
+/* 
+#portada_galeria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height:150vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("./media/fondo.jpg"); /*Imagen cabecera web*/
+   /*  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; */
+/* } */
+
+#portada_galeria h1, p{
+    font-family: 'Architects Daughter', cursive;
+    color: white;
+}
+ */
+/* .portada_galeria{
+    background-color: #ccccccbd;
+    width: 590px;
+    height: 590px;
+    padding: 5%;
+}
+ */
+/* .portada_galeria a{
+    color: #3d0c3f;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 2px;
+} */
+
+#portada h1{
+    color: white;
+}
+
+.container p{
+    color: rgba(43, 40, 40, 0.842);
+}
+
+#portada button{
+    font-size: 1.75em;
+}
+
+#central .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#portada_reservas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height:110vh;
+    padding-top: 20px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("./media/reservas.jpg"); /*Imagen cabecera web*/
+    background-repeat: no-repeat;
+    background-size: cover;/*Ajusta la imagen para cubrir todo el contenedor*/
+    background-position: center center;
+}
+
+
+#portada_reservas h1, h4, p{
+    font-family: 'Architects Daughter', cursive;
+    color: white;
+    margin: 2px;
+}
+
+#nuestros-menus{
+    background-color: rgb(30,30,30);
+    background-image:url("./media/fondo6.jpg"); /*Imagen de fondo para toda la carta*/
+    color: rgba(3, 3, 3, 0.849);
+    text-align: center center;
+    background-repeat: repeat;
+    background-size:70%;
+    background-size: cover;
+}
+
+/*Disposicion de los elementos en la web*/
+#nuestros-menus .container{
+    padding: 110px 20px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: space-evenly;
+    justify-content: space-evenly;
+}
+
+
+#nuestros-menus .carta{
+    width: 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.37),
+        rgba(255, 255, 255, 0.712)
+    )
+    ,url("./media/fondo3.jpg"); /*Imagen cabecera web*/
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.carta:hover{
+    color: blueviolet;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #portada h1{
+        font-size: 5em;
+    }
+
+    #central .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #central .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #central h2{
+        margin-top: 0px;
+    }
+
+    #central .img-container{
+        background-image: url("./media/desarrollo.jpg"); /*Imagen centro web*/
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #nuestros-menus .programas{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #nuestros-menus p{
+        font-size: 20px;
+        padding: 2%;
+        margin: 2%;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.322);
+    }
+
+    #nuestros-menus h2{
+        font-size: 4em;
+    }
+
+    #nuestros-menus h3{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 3px, 3px, 3px, 3px;
+    }
+
+    #nuestros-menus .carta{
+        font-family: 'Bebas Neue', cursive;
+        width: 500px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+
+    }
+
+    /*FORM CSS*/
+    form{
+        width: 500px;
+        background-color: rgba(255, 255, 255, 0.356);
+        background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.37),
+        rgba(255, 255, 255, 0.712)
+    )
+    ,url("./media/reservas.jpg");
+        margin: 10;
+        padding: 5%;
+        margin: 0 auto;
+    }
+
+    form h4, label{
+        color: #fff;
+    }
+
+    /* Estilos para los campos de entrada */
+    input[type="text"],
+    input[type="email"],
+    input[type="text"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    /* Estilos para el botón de enviar */
+    input[type="submit"] {
+        background-color: #007BFF;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /* Estilos adicionales para el formulario */
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+form p{
+    color: #ff0000;
+}
+
+    /* Estilos adicionales para el formulario */
+form  .warnings {
+        width: 200px;
+        text-align: center;
+        margin: auto;
+        color: #ff0000;
+        padding-top: 20px;
+    }
